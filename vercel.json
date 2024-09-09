@@ -9,13 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/views"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/login"
+      "dest": "/index.js"
     }
   ]
 }
