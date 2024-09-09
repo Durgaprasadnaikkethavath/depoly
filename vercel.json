@@ -2,14 +2,20 @@
   "version": 2,
   "builds": [
     {
-      "src": "./index.js",
+      "src": "index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "./view/.*",
-      "dest": "/"
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/login"
     }
   ]
 }
