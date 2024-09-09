@@ -21,8 +21,11 @@ const userCollection = require("./model/schema");
 //   res.send("<h1>Welcome to backend project</h1>");
 // });
 
+const filePath = path.join(__dirname, "index.html");
+
 app.get("/", (req, res) => {
-  res.render("login");
+  // res.render("login");
+  res.sendFile(filePath);
 });
 
 app.get("/signup", (req, res) => {
