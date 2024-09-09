@@ -15,7 +15,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/login"
+      "destination": "/views/login"
     }
   ]
 }
